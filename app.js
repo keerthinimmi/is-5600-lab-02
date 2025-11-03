@@ -114,10 +114,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const stocksData = JSON.parse(stockContent);
   const userData = JSON.parse(userContent);
 
-  // Generate the initial user list
   generateUserList(userData, stocksData);
 
-  // Delete button functionality
   const deleteButton = document.querySelector('#deleteButton');
   deleteButton.addEventListener('click', (event) => {
     event.preventDefault();
@@ -129,7 +127,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Save button functionality
   const saveButton = document.querySelector('#saveButton');
   saveButton.addEventListener('click', (event) => {
     event.preventDefault();
